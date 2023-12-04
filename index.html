@@ -58,6 +58,9 @@
             padding: 0px 8px;
             border-radius: 2px;
         }
+        .mybody {
+            background-color: #F6F7F9;
+        }
     </style>
 </head>
 
@@ -135,31 +138,33 @@
         </div>
 
         <div class="bg-light flex-fill">
-            <!-- Thanh điều hướng -->
-            <div class="p-2 d-flex text-dark bg-light shadow-sm">
-                <div class="d-md-none">
-                    <a href="#" class="text-dark" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
+            <div class="mybody">
+                <!-- Thanh điều hướng -->
+                <div class="p-2 d-flex text-dark bg-light shadow-sm">
+                    <div class="d-md-none">
+                        <a href="#" class="text-dark" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <span class="ms-3">HCES</span>
                 </div>
-                <span class="ms-3">HCES</span>
-            </div>
-            <div class="p-4">
-                <nav style="--bs-breadcrumb-divider:'>';font-size:14px">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><i class="fa-solid fa-house"></i></li>
-                        <li class="breadcrumb-item">Dashboard</li>
-                        <li class="breadcrumb-item">Orders</li>
-                    </ol>
-                </nav>
-                <div class="d-flex justify-content-between">
-                    <h5>Orders</h5>
-                    <button class="btn btn-sm btn-light"><i class="fa-solid fa-download"></i> Download</button>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col">
-                        <p>Page content goes here</p>
+                <div class="p-4">
+                    <nav style="--bs-breadcrumb-divider:'>';font-size:14px">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><i class="fa-solid fa-house"></i></li>
+                            <li class="breadcrumb-item">Dashboard</li>
+                            <li class="breadcrumb-item">Orders</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex justify-content-between">
+                        <h5>Orders</h5>
+                        <button class="btn btn-sm btn-light"><i class="fa-solid fa-download"></i> Download</button>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <p>Page content goes here</p>
+                        </div>
                     </div>
                 </div>
             </div>
