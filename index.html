@@ -124,6 +124,78 @@
         .error-message {
             color: red;
         }
+
+
+        .title-hr {
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+            min-height: 42px;
+        }
+
+        .title-hr p {
+            position: absolute;
+            padding-right: 20px;
+            line-height: 40px;
+            background-color: #fff;
+            z-index: 1
+        }
+
+        .title-hr hr {
+            position: absolute;
+            top: 0;
+            margin-top: 20px;
+            z-index: 0;
+            width: 100%;
+            right: 0;
+            border-width: 3px
+        }
+
+        .title-hr a {
+            position: absolute;
+            top: 0;
+            margin-top: 6px;
+            left: auto;
+            right: 0;
+            color: #f23f44 !important;
+            padding: 4px 0;
+            cursor: pointer;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #ebebeb;
+            text-align: center
+        }
+
+        .bg-form-right {
+            background: #f6f7f9;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .dxtypepo {
+            background-color: #fff;
+            color: #333;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Helvetica Neue','Segoe UI',Helvetica,Verdana,sans-serif;
+            line-height: 1.35715;
+        }
+        .content {
+            position: relative;
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 60vh;
+        }
+        .list-step{
+
+        }
+        .list-step li {
+            float: left;
+            list-style: none;
+        }
+
+
     </style>
 </head>
 
@@ -239,15 +311,18 @@
                                                             class="text-danger">*</span></label>
                                                     <div class="input-group">
                                                         <input autofocus="" class="form-control" id="txtHoVaTen"
-                                                               list="listUngVien" maxlength="50" placeholder="Nhập ...">
+                                                               maxlength="50" placeholder="Nhập ...">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-2">
                                                     <label class="control-label">Dân tộc</label>
-                                                    <select class="form-control" name="danToc">
-                                                        <!-- Các tùy chọn dân tộc có thể được thêm vào đây -->
-                                                    </select>
+                                                <!--    <select class="form-control" name="danToc">
+                                                        &lt;!&ndash; Các tùy chọn dân tộc có thể được thêm vào đây &ndash;&gt;
+                                                    </select>-->
+
+                                                    <input class="form-control" formcontrolname="danToc"  id="dantoc"
+                                                           placeholder="Nhập ...">
                                                 </div>
 
                                                 <div class="col-md-2">
@@ -264,8 +339,8 @@
                                                             class="text-danger">*</span></label>
                                                     <div class="input-group date">
                                                         <input type="date" class="form-control" id="dobInput" name="dob">
-                                                        <span class="input-group-addon" aria-expanded="false"><i
-                                                                class="fal fa-calendar"></i></span>
+                                                        <!--<span class="input-group-addon" aria-expanded="false"><i
+                                                                class="fal fa-calendar"></i></span>-->
                                                     </div>
                                                 </div>
                                             </div>
@@ -290,8 +365,8 @@
                                                     <div class="input-group date">
                                                         <input type="date" class="form-control" id="dateIndentity"
                                                                name="dob">
-                                                        <span class="input-group-addon" aria-expanded="false"><i
-                                                                class="fal fa-calendar"></i></span>
+                                                        <!--<span class="input-group-addon" aria-expanded="false"><i
+                                                                class="fal fa-calendar"></i></span>-->
                                                     </div>
                                                 </div>
                                             </div>
