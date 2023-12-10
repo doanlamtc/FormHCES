@@ -397,8 +397,8 @@
                     <div class="tabs">
                         <div class="tab" onclick="changeTab('employmentInfo')">Thông tin lao động</div>
                         <div class="tab" onclick="changeTab('skills')">Năng lực, sở trường</div>
-                        <div class="tab" onclick="changeTab('jobIntroduction')">Tư vấn, giới thiệu việc làm</div>
                         <div class="tab" onclick="changeTab('workExperience')">Kinh nghiệm làm việc</div>
+                        <div class="tab" onclick="changeTab('jobIntroduction')">Tư vấn, giới thiệu việc làm</div>
                         <div class="tab" onclick="changeTab('desiredJob')">Việc làm mong muốn</div>
                     </div>
 
@@ -820,7 +820,7 @@
                                                     <input type="checkbox" class="form-check-input"
                                                            id="uuTienkhacCheckbox" value="6043"
                                                            name="uuTienkhacCheckbox">
-                                                    <label class="form-check-label" for="khacCheckbox">Khác (ghi
+                                                    <label class="form-check-label" for="uuTienkhacCheckbox">Khác (ghi
                                                         rõ)</label>
                                                 </div>
                                             </div>
@@ -1496,12 +1496,284 @@
                         </div>
                     </div>
 
-                    <div id="jobIntroductionTab" class="tab-content bg-white p-4">
-                        <h2>Tư vấn, giới thiệu việc làm</h2>
-                    </div>
-
                     <div id="workExperienceTab" class="tab-content bg-white p-4">
                         <h2>Kinh nghiệm làm việc</h2>
+                    </div>
+
+                    <div id="jobIntroductionTab" class="tab-content bg-white p-4">
+                        <div class="col-md-12 pl-70 pr-50">
+                            <div class="content-main" >
+                                <div class="row">
+                                    <div class="col-md-9 border-right">
+                                        <h4>Đăng ký tư vấn <span class="text-danger"> *</span></h4>
+                                        <div class="row form-group mb-0">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="phapLuatLaoDongCheckbox" value="Người khuyết tật"
+                                                           name="phapLuatLaoDong">
+                                                    <label class="form-check-label"
+                                                           for="phapLuatLaoDongCheckbox">Chính sách, pháp luật về lao động
+                                                        việc làm</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="viecLam" value="Việc làm"
+                                                           name="viecLam">
+                                                    <label class="form-check-label"
+                                                           for="viecLam">Việc làm</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="khongDangky" value="Không đăng ký"
+                                                           name="viecLam">
+                                                    <label class="form-check-label"
+                                                           for="khongDangky">Không đăng ký</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="bhThatNghiep" value="Bảo hiểm thất nghiệp"
+                                                           name="bhThatNghiep">
+                                                    <label class="form-check-label"
+                                                           for="bhThatNghiep">Bảo hiểm thất nghiệp</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="hocNghe" value="Học nghề"
+                                                           name="hocNghe">
+                                                    <label class="form-check-label"
+                                                           for="hocNghe">Học nghề</label>
+                                                </div>
+                                            </div>
+                                        </div><!----><!---->
+                                        <h4>Đăng ký cung ứng thông tin thị trường lao động <span class="text-danger"> *</span>
+                                        </h4>
+                                        <div class="row form-group mb-0">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="xuHuongTuyenDung" value="Xu hướng tuyển dụng của thị trường
+                                                lao động"
+                                                           name="xuHuongTuyenDung">
+                                                    <label class="form-check-label"
+                                                           for="xuHuongTuyenDung">Xu hướng tuyển dụng của thị trường
+                                                        lao động</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="thongTinTuyenDung" value="Thông tin tuyển dụng phù hợp"
+                                                           name="thongTinTuyenDung">
+                                                    <label class="form-check-label"
+                                                           for="thongTinTuyenDung">Thông tin tuyển dụng phù hợp</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="khongDangKy2" value="Không đăng ký"
+                                                           name="thongTinTuyenDung">
+                                                    <label class="form-check-label"
+                                                           for="khongDangKy2">Không đăng ký</label>
+                                                </div>
+                                            </div>
+                                        </div><!----><!---->
+                                        <h4>Giới thiệu việc làm/ cung ứng lao động <span class="text-danger"> *</span></h4>
+                                        <div class="row form-group mb-0">
+                                                <div class="col-md-4 mb-3">
+                                                    <p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="1"></div>
+                                                        <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                                class="ui-chkbox-icon ui-clickable"></span></div>
+                                                    </div><!----><label class="ui-chkbox-label">Tham gia cung ứng tuyển dụng cho
+                                                    doanh nghiệp</label>
+                                                    </p-checkbox>
+                                                    
+                                                </div>
+                                                <div class="col-md-4 mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="2"></div>
+                                                        <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                            <span class="ui-chkbox-icon ui-clickable pi pi-check"></span>
+                                                        </div>
+                                                    </div><!----><label class="ui-chkbox-label ui-label-active">Giới thiệu việc làm
+                                                    phù hợp</label>
+                                                </p-checkbox></div>
+                                                <div class="col-md-4 mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="3"></div>
+                                                        <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                                class="ui-chkbox-icon ui-clickable"></span></div>
+                                                    </div><!----><label class="ui-chkbox-label">Không đăng ký</label>
+                                                </p-checkbox></div>
+                                        </div><!----><!---->
+                                        <h4>Mức độ sẵn sàng làm việc mới <span class="text-danger"> *</span></h4>
+                                        <div class="row"><mat-radio-group
+                                                class="mat-radio-group ng-untouched ng-pristine ng-valid"
+                                                formcontrolname="sanSangLamViec" role="radiogroup">
+                                            <div class="col-md-6"><mat-radio-button
+                                                    class="mat-radio-button mat-accent mat-radio-checked" id="mat-radio-28"><label
+                                                    class="mat-radio-label" for="mat-radio-28-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-28-input" tabindex="0" name="mat-radio-group-26">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Khi được giới thiệu việc làm phù hợp
+                                                </div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-6"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-29"><label class="mat-radio-label" for="mat-radio-29-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-29-input" tabindex="0" name="mat-radio-group-26">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Đang rất cần việc</div>
+                                            </label></mat-radio-button></div>
+                                        </mat-radio-group></div><!----><!---->
+                                        <h4>Hình thức tuyển dụng <span class="text-danger"> *</span></h4>
+                                        <div class="row form-group mb-0">
+                                            <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                                                <button style="display: none"></button><!---->
+                                                <div class="col-md-4 mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="1"></div>
+                                                        <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                            <span class="ui-chkbox-icon ui-clickable pi pi-check"></span>
+                                                        </div>
+                                                    </div><!----><label class="ui-chkbox-label ui-label-active">Trực tiếp</label>
+                                                </p-checkbox></div>
+                                                <div class="col-md-4 mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="2"></div>
+                                                        <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                            <span class="ui-chkbox-icon ui-clickable pi pi-check"></span>
+                                                        </div>
+                                                    </div><!----><label class="ui-chkbox-label ui-label-active">Qua điện
+                                                    thoại</label>
+                                                </p-checkbox></div>
+                                                <div class="col-md-4 mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="3"></div>
+                                                        <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                                class="ui-chkbox-icon ui-clickable"></span></div>
+                                                    </div><!----><label class="ui-chkbox-label">Phỏng vấn online</label>
+                                                </p-checkbox></div>
+                                                <div class="col-md-4 mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="4"></div>
+                                                        <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                            <span class="ui-chkbox-icon ui-clickable pi pi-check"></span>
+                                                        </div>
+                                                    </div><!----><label class="ui-chkbox-label ui-label-active">Nộp CV</label>
+                                                </p-checkbox></div>
+                                            </form>
+                                        </div><!----><!---->
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <h4>Đồng ý cập nhật CV lên Cổng thông tin DVVL Việt Nam ESIP <span
+                                                class="font-weight-light">(ẩn danh và điện thoại) </span><span
+                                                class="text-danger">*</span></h4>
+                                        <div class="bg-form-right pb-5">
+                                            <div class="form-group mb-0"><mat-radio-group
+                                                    class="mat-radio-group ng-untouched ng-pristine ng-valid"
+                                                    formcontrolname="capNhatCV" role="radiogroup"><mat-radio-button
+                                                    class="mat-radio-button mat-accent mat-radio-checked" style="display: block;"
+                                                    id="mat-radio-31"><label class="mat-radio-label" for="mat-radio-31-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-31-input" tabindex="0" name="mat-radio-group-29">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Đồng ý</div>
+                                            </label></mat-radio-button><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                         id="mat-radio-32"><label class="mat-radio-label" for="mat-radio-32-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-32-input" tabindex="0" name="mat-radio-group-29">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Không đồng ý</div>
+                                            </label></mat-radio-button></mat-radio-group></div>
+                                        </div><!----><!---->
+                                        <h4>Đồng ý tiếp nhận thông tin từ Trung tâm Dịch vụ việc làm Hà
+                                            Nội <span class="text-danger"> *</span></h4>
+                                        <div class="bg-form-right">
+                                            <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                                                <button style="display: none"></button><!---->
+                                                <div class="mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="1"></div>
+                                                        <div
+                                                                class="ui-chkbox-box ui-widget ui-corner-all ui-state-default ui-state-active">
+                                                            <span class="ui-chkbox-icon ui-clickable pi pi-check"></span>
+                                                        </div>
+                                                    </div><!----><label class="ui-chkbox-label ui-label-active">Điện thoại</label>
+                                                </p-checkbox></div>
+                                                <div class="mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="2"></div>
+                                                        <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                                class="ui-chkbox-icon ui-clickable"></span></div>
+                                                    </div><!----><label class="ui-chkbox-label">Email</label>
+                                                </p-checkbox></div>
+                                                <div class="mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="3"></div>
+                                                        <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                                class="ui-chkbox-icon ui-clickable"></span></div>
+                                                    </div><!----><label class="ui-chkbox-label">Zalo</label>
+                                                </p-checkbox></div>
+                                                <div class="mb-3"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="ui-chkbox ui-widget">
+                                                        <div class="ui-helper-hidden-accessible"><input type="checkbox"
+                                                                                                        name="undefined" value="4"></div>
+                                                        <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                                class="ui-chkbox-icon ui-clickable"></span></div>
+                                                    </div><!----><label class="ui-chkbox-label">Facebook</label>
+                                                </p-checkbox></div>
+                                            </form>
+                                        </div><!----><!---->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="desiredJobTab" class="tab-content bg-white p-4">
