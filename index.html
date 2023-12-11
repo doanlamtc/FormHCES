@@ -1729,7 +1729,784 @@
                     </div>
 
                     <div id="desiredJobTab" class="tab-content bg-white p-4">
-                        <h2>Việc làm mong muốn</h2>
+                        <div class="col-md-12 pl-70 pr-50">
+                            <div class="content-main">
+                                <div class="row">
+                                    <div class="col-md-9 border-right">
+                                        <div class="title-hr">
+                                            <p>Công việc mong muốn</p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-8">
+                                                <label class="control-label">Tên công việc<span
+                                                    class="text-danger"> *</span></label>
+                                                <input autofocus="" class="form-control ng-untouched ng-pristine ng-invalid"
+                                                       formcontrolname="tenCongViec" id="tencongviec" maxlength="200" name="tenCongViec"
+                                                       placeholder="Nhập ..." svtrim="" type="text"><!---->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Mã nghề<span
+                                                        class="text-danger"> *</span></label>
+                                                <input autofocus="" class="form-control"
+                                                       maxlength="200" id="maNghe" name="maNghe"
+                                                       placeholder="Nhập Mã nghề ..." type="text"><!---->
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Nhiệm vụ<span class="text-danger"> *</span></label>
+                                                <textarea
+                                                    class="form-control"
+                                                    maxlength="1000" placeholder="Nhập..." rows="3" id="nhiemVu" name="nhiemVu">
+                                                </textarea><!---->
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Trách nhiệm<span class="text-danger"> *</span></label>
+                                                <textarea
+                                                        class="form-control"
+                                                        maxlength="1000" placeholder="Nhập..." rows="3" id="trachNhiem" name="trachNhiem">
+                                                </textarea><!---->
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Quyền hạn<span>*</span></label>
+                                                <textarea
+                                                    class="form-control" id="quyenHan"
+                                                    name="quyenHan" maxlength="1000" placeholder="Nhập..." rows="3">
+                                                </textarea><!---->
+                                            </div>
+                                        </div>
+
+                                        <div class="title-hr">
+                                            <p>Nơi làm việc ưu tiên 1<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <input class="form-control" id="uuTien1" maxlength="200" name="uuTienKhac"
+                                                       placeholder="Nhập ..." type="text">
+                                            </div>
+                                        </div>
+                                        <div class="title-hr">
+                                            <p>Nơi làm việc ưu tiên 2</p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-2 pt-1"><span>Nước ngoài</span>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <input class="form-control" id="uuTien2" maxlength="200"
+                                                       name="uuTien2" placeholder="Nhập ..." type="text">
+                                            </div>
+                                        </div>
+                                        <div class="title-hr">
+                                            <p>Ngành kinh tế ưu tiên<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group mb-0"><mat-radio-group
+                                                class="mat-radio-group ng-untouched ng-pristine ng-invalid"
+                                                formcontrolname="nganhKtUuTien" role="radiogroup"><!---->
+                                            <div class="col-md-4"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-88"><label class="mat-radio-label" for="mat-radio-88-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-88-input" tabindex="0" name="mat-radio-group-33">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Nông – Lâm nghiệp – Thủy sản</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-4"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-89"><label class="mat-radio-label" for="mat-radio-89-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-89-input" tabindex="0" name="mat-radio-group-33">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Công nghiệp – Xây dựng</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-4"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-90"><label class="mat-radio-label" for="mat-radio-90-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-90-input" tabindex="0" name="mat-radio-group-33">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Thương mại – Dịch vụ</div>
+                                            </label></mat-radio-button></div>
+                                        </mat-radio-group></div><!---->
+                                        <div class="title-hr">
+                                            <p>Mức lương<span class="text-danger">
+                                      *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3"><label>Lương tháng
+                                                (VNĐ):</label></div>
+                                            <div class="col-md-9">
+                                                <div class="row"><mat-radio-group
+                                                        class="mat-radio-group ng-untouched ng-pristine ng-valid"
+                                                        formcontrolname="mucLuong" role="radiogroup"><!---->
+                                                    <div>
+                                                        <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                                id="mat-radio-51"><label class="mat-radio-label" for="mat-radio-51-input">
+                                                            <div class="mat-radio-container">
+                                                                <div class="mat-radio-outer-circle"></div>
+                                                                <div class="mat-radio-inner-circle"></div>
+                                                                <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                            </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                         id="mat-radio-51-input" tabindex="0" name="mat-radio-group-34">
+                                                            <div class="mat-radio-label-content"><span
+                                                                    style="display:none">&nbsp;</span>Dưới 5 triệu </div>
+                                                        </label></mat-radio-button></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                                id="mat-radio-52"><label class="mat-radio-label" for="mat-radio-52-input">
+                                                            <div class="mat-radio-container">
+                                                                <div class="mat-radio-outer-circle"></div>
+                                                                <div class="mat-radio-inner-circle"></div>
+                                                                <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                            </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                         id="mat-radio-52-input" tabindex="0" name="mat-radio-group-34">
+                                                            <div class="mat-radio-label-content"><span
+                                                                    style="display:none">&nbsp;</span>5 đến 10 triệu </div>
+                                                        </label></mat-radio-button></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                                id="mat-radio-53"><label class="mat-radio-label" for="mat-radio-53-input">
+                                                            <div class="mat-radio-container">
+                                                                <div class="mat-radio-outer-circle"></div>
+                                                                <div class="mat-radio-inner-circle"></div>
+                                                                <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                            </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                         id="mat-radio-53-input" tabindex="0" name="mat-radio-group-34">
+                                                            <div class="mat-radio-label-content"><span
+                                                                    style="display:none">&nbsp;</span>10 đến 20 triệu </div>
+                                                        </label></mat-radio-button></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                                id="mat-radio-54"><label class="mat-radio-label" for="mat-radio-54-input">
+                                                            <div class="mat-radio-container">
+                                                                <div class="mat-radio-outer-circle"></div>
+                                                                <div class="mat-radio-inner-circle"></div>
+                                                                <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                            </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                         id="mat-radio-54-input" tabindex="0" name="mat-radio-group-34">
+                                                            <div class="mat-radio-label-content"><span
+                                                                    style="display:none">&nbsp;</span>Trên 20 triệu </div>
+                                                        </label></mat-radio-button></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col-md-12"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                                 id="mat-radio-55"><label class="mat-radio-label" for="mat-radio-55-input">
+                                                            <div class="mat-radio-container">
+                                                                <div class="mat-radio-outer-circle"></div>
+                                                                <div class="mat-radio-inner-circle"></div>
+                                                                <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                            </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                         id="mat-radio-55-input" tabindex="0" name="mat-radio-group-34">
+                                                            <div class="mat-radio-label-content"><span
+                                                                    style="display:none">&nbsp;</span>Thỏa thuận khi phỏng vấn </div>
+                                                        </label></mat-radio-button></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col-md-12"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                                 id="mat-radio-56"><label class="mat-radio-label" for="mat-radio-56-input">
+                                                            <div class="mat-radio-container">
+                                                                <div class="mat-radio-outer-circle"></div>
+                                                                <div class="mat-radio-inner-circle"></div>
+                                                                <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                            </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                         id="mat-radio-56-input" tabindex="0" name="mat-radio-group-34">
+                                                            <div class="mat-radio-label-content"><span
+                                                                    style="display:none">&nbsp;</span>Hoa hồng theo doanh thu sản phẩm
+                                                            </div>
+                                                        </label></mat-radio-button></div>
+                                                    </div>
+                                                </mat-radio-group></div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-3 mt-3"><label class="control-label">Lương ngày:</label></div>
+                                            <div class="col-md-3"><input class="form-control ng-untouched ng-pristine ng-valid"
+                                                                         formcontrolname="luongNgay" mask="separator" maxlength="19"
+                                                                         placeholder="Nhập số tiền..." thousandseparator="." type="text"></div>
+                                            <div class="col-md-2"><span class="span-control">vnđ/ngày</span></div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-3 mt-3"><label class="control-label">Lương giờ:</label></div>
+                                            <div class="col-md-3"><input class="form-control ng-untouched ng-pristine ng-valid"
+                                                                         formcontrolname="luongGio" mask="separator" maxlength="19"
+                                                                         placeholder="Nhập số tiền..." thousandseparator="." type="text"></div>
+                                            <div class="col-md-2"><span class="span-control">vnđ/giờ</span></div>
+                                        </div><!---->
+                                        <div class="title-hr">
+                                            <p>Yêu cầu về phúc lợi<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3"><label class="span-control">Hỗ trợ ăn</label></div>
+                                            <div class="col-md-9">
+                                                <div class="row"><mat-radio-group
+                                                        class="mat-radio-group ng-untouched ng-pristine ng-invalid"
+                                                        formcontrolname="hoTroAn" role="radiogroup"><!---->
+                                                    <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                            id="mat-radio-57"><label class="mat-radio-label" for="mat-radio-57-input">
+                                                        <div class="mat-radio-container">
+                                                            <div class="mat-radio-outer-circle"></div>
+                                                            <div class="mat-radio-inner-circle"></div>
+                                                            <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                        </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                     id="mat-radio-57-input" tabindex="0" name="mat-radio-group-35">
+                                                        <div class="mat-radio-label-content"><span
+                                                                style="display:none">&nbsp;</span> 1 bữa </div>
+                                                    </label></mat-radio-button></div>
+                                                    <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                            id="mat-radio-58"><label class="mat-radio-label" for="mat-radio-58-input">
+                                                        <div class="mat-radio-container">
+                                                            <div class="mat-radio-outer-circle"></div>
+                                                            <div class="mat-radio-inner-circle"></div>
+                                                            <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                        </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                     id="mat-radio-58-input" tabindex="0" name="mat-radio-group-35">
+                                                        <div class="mat-radio-label-content"><span
+                                                                style="display:none">&nbsp;</span> 2 bữa </div>
+                                                    </label></mat-radio-button></div>
+                                                    <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                            id="mat-radio-59"><label class="mat-radio-label" for="mat-radio-59-input">
+                                                        <div class="mat-radio-container">
+                                                            <div class="mat-radio-outer-circle"></div>
+                                                            <div class="mat-radio-inner-circle"></div>
+                                                            <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                        </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                     id="mat-radio-59-input" tabindex="0" name="mat-radio-group-35">
+                                                        <div class="mat-radio-label-content"><span
+                                                                style="display:none">&nbsp;</span> 3 bữa </div>
+                                                    </label></mat-radio-button></div>
+                                                    <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                            id="mat-radio-60"><label class="mat-radio-label" for="mat-radio-60-input">
+                                                        <div class="mat-radio-container">
+                                                            <div class="mat-radio-outer-circle"></div>
+                                                            <div class="mat-radio-inner-circle"></div>
+                                                            <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                        </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                                     id="mat-radio-60-input" tabindex="0" name="mat-radio-group-35">
+                                                        <div class="mat-radio-label-content"><span
+                                                                style="display:none">&nbsp;</span> Bằng tiền </div>
+                                                    </label></mat-radio-button></div>
+                                                </mat-radio-group></div>
+                                            </div>
+                                        </div>
+                                        <hr class="bacic-hr" style="margin-top:0px;">
+                                        <div class="row"><!---->
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="2"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">BH nhân thọ</label>
+                                            </p-checkbox></div>
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="12065"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">BHXH</label>
+                                            </p-checkbox></div>
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="12066"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">Không</label>
+                                            </p-checkbox></div>
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="7"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">Xe đưa đón</label>
+                                            </p-checkbox></div>
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="8"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">Hỗ trợ đi lại</label>
+                                            </p-checkbox></div>
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="1"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">Đóng BHXH, BHYT, BHTN</label>
+                                            </p-checkbox></div>
+                                            <div class="col-md-4 mb-2"><p-checkbox class="ng-untouched ng-pristine ng-valid">
+                                                <div class="ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input type="checkbox" name="undefined"
+                                                                                                    value="6047"></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                                            class="ui-chkbox-icon ui-clickable"></span></div>
+                                                </div><!----><label class="ui-chkbox-label">Hỗ trợ nhà ở</label>
+                                            </p-checkbox></div>
+                                        </div>
+                                        <form class="row d-flex align-item-center mt-3 ng-untouched ng-pristine ng-valid"
+                                              novalidate=""><button style="display: none"></button>
+                                            <div class="col-md-9"><input class="form-control ng-untouched ng-pristine ng-valid"
+                                                                         maxlength="250" name="txtAddPhucLoiXH" placeholder="Tên phúc lợi xã hội..."
+                                                                         svtrim="" type="text">
+                                            </div>
+                                            <div class="col-md-2" style="padding-left: 0"><button
+                                                    class="btn btn-config btn-success" title="Lưu"><i
+                                                    class="far fa-check"></i></button></div>
+                                        </form><!---->
+                                        <div class="title-hr">
+                                            <p>Yêu cầu về thăng tiến<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group mb-0"><mat-radio-group
+                                                class="mat-radio-group ng-untouched ng-pristine ng-invalid"
+                                                formcontrolname="thangTien" role="radiogroup"><!---->
+                                            <div class="col-md-4"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-61"><label class="mat-radio-label" for="mat-radio-61-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-61-input" tabindex="0" name="mat-radio-group-36">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Không ưu tiên</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-4"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-62"><label class="mat-radio-label" for="mat-radio-62-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-62-input" tabindex="0" name="mat-radio-group-36">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Ưu tiên</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-4"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-63"><label class="mat-radio-label" for="mat-radio-63-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-63-input" tabindex="0" name="mat-radio-group-36">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Rất ưu tiên</div>
+                                            </label></mat-radio-button></div>
+                                        </mat-radio-group></div><!---->
+                                        <div class="title-hr">
+                                            <p>Yêu cầu tăng lương<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group mb-0"><mat-radio-group
+                                                class="mat-radio-group ng-untouched ng-pristine ng-invalid"
+                                                formcontrolname="tangLuong" role="radiogroup"><!---->
+                                            <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-64"><label class="mat-radio-label" for="mat-radio-64-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-64-input" tabindex="0" name="mat-radio-group-37">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Không yêu cầu</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-65"><label class="mat-radio-label" for="mat-radio-65-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-65-input" tabindex="0" name="mat-radio-group-37">
+                                                <div class="mat-radio-label-content"><span
+                                                        style="display:none">&nbsp;</span>Hàng năm</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-66"><label class="mat-radio-label" for="mat-radio-66-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-66-input" tabindex="0" name="mat-radio-group-37">
+                                                <div class="mat-radio-label-content"><span style="display:none">&nbsp;</span>2
+                                                    năm</div>
+                                            </label></mat-radio-button></div>
+                                            <div class="col-md-3"><mat-radio-button class="mat-radio-button mat-accent"
+                                                                                    id="mat-radio-67"><label class="mat-radio-label" for="mat-radio-67-input">
+                                                <div class="mat-radio-container">
+                                                    <div class="mat-radio-outer-circle"></div>
+                                                    <div class="mat-radio-inner-circle"></div>
+                                                    <div class="mat-radio-ripple mat-ripple" mat-ripple=""></div>
+                                                </div><input class="mat-radio-input cdk-visually-hidden" type="radio"
+                                                             id="mat-radio-67-input" tabindex="0" name="mat-radio-group-37">
+                                                <div class="mat-radio-label-content"><span style="display:none">&nbsp;</span>3
+                                                    năm</div>
+                                            </label></mat-radio-button></div>
+                                        </mat-radio-group></div><!---->
+                                        <div class="title-hr">
+                                            <p>Khả năng làm việc<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <table class="table table-striped table-responsive">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Nơi làm việc:</td>
+                                                        <td><p-radiobutton formcontrolname="noiLamViec" label="Trong nhà"
+                                                                           name="groupNoiLV" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupNoiLV" value="1"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Trong nhà</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="noiLamViec" label="Ngoài trời"
+                                                                           name="groupNoiLV" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupNoiLV" value="2"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Ngoài trời</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="noiLamViec" label="Hỗn hợp"
+                                                                           name="groupNoiLV" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupNoiLV" value="3"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Hỗn hợp</label>
+                                                        </p-radiobutton></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Trọng lượng nâng:</td>
+                                                        <td><p-radiobutton formcontrolname="trongLuong" label="Dưới 5 kg"
+                                                                           name="groupTrongLuong" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupTrongLuong" value="1"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Dưới 5 kg</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="trongLuong" label="5 – 20 kg"
+                                                                           name="groupTrongLuong" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupTrongLuong" value="2"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">5 – 20 kg</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="trongLuong" label="Trên 20 kg"
+                                                                           name="groupTrongLuong" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupTrongLuong" value="3"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Trên 20 kg</label>
+                                                        </p-radiobutton></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thính lực:</td>
+                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Kém" name="groupThinhLuc"
+                                                                           class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThinhLuc" value="1"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Kém</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Trung bình"
+                                                                           name="groupThinhLuc" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThinhLuc" value="2"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Trung bình</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Khá" name="groupThinhLuc"
+                                                                           class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThinhLuc" value="3"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Khá</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Tốt" name="groupThinhLuc"
+                                                                           class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThinhLuc" value="4"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Tốt</label>
+                                                        </p-radiobutton></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thị lực:</td>
+                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Kém" name="groupThiLuc"
+                                                                           class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThiLuc" value="1"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Kém</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Trung bình"
+                                                                           name="groupThiLuc" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThiLuc" value="2"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Trung bình</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Khá" name="groupThiLuc"
+                                                                           class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThiLuc" value="3"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Khá</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Tốt" name="groupThiLuc"
+                                                                           class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThiLuc" value="4"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Tốt</label>
+                                                        </p-radiobutton></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thao tác tay:</td>
+                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Kém"
+                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThaoTacTay" value="1"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Kém</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Trung bình"
+                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThaoTacTay" value="2"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Trung bình</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Khá"
+                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThaoTacTay" value="3"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Khá</label>
+                                                        </p-radiobutton></td>
+                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Tốt"
+                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
+                                                            <div class="ui-radiobutton ui-widget">
+                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
+                                                                                                                name="groupThaoTacTay" value="4"></div>
+                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
+                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
+                                                            </div><!----><label class="ui-radiobutton-label">Tốt</label>
+                                                        </p-radiobutton></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!---->
+                                        </div>
+                                        
+
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <h4>Loại hình doanh nghiệp</h4>
+                                        <div class="bg-form-right">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="loaiHinhDN" id="nhaNuoc" value="Nhà nước">
+                                                        <label class="form-check-label" for="nhaNuoc">Nhà nước</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="loaiHinhDN" id="ngoaiNhaNuoc" value="Ngoài nhà nước">
+                                                        <label class="form-check-label" for="ngoaiNhaNuoc">Ngoài nhà nước</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="loaiHinhDN" id="coVonNuocNgoai" value="Có vốn đầu tư nước ngoài">
+                                                        <label class="form-check-label" for="coVonNuocNgoai">Có vốn đầu tư nước ngoài</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4>Chức danh<span class="text-danger">*</span></h4>
+                                    <div class="bg-form-right">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="chucVuMoi" id="nhanVienMoi" value="Nhân viên">
+                                                    <label class="form-check-label" for="nhanVienMoi">Nhân viên</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="chucVuMoi" id="quanLy" value="Quản lý">
+                                                    <label class="form-check-label" for="quanLy">Quản lý</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="chucVuMoi" id="lanhDao" value="Lãnh đạo">
+                                                    <label class="form-check-label" for="lanhDao">Lãnh đạo</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="chucVuMoi" id="chucVuKhac" value="Khác">
+                                                    <label class="form-check-label" for="chucVuKhac">Khác</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control" maxlength="200" name="txtChucDanh" placeholder="Nhập..." svtrim="" type="text">
+                                        </div>
+                                    </div><!---->
+                                    <h4>Loại hợp đồng LĐ<span class="text-danger"> *</span></h4>
+                                    <div class="bg-form-right">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="loaiHopDong" id="khongThoiHan" value="Không thời hạn">
+                                                    <label class="form-check-label" for="khongThoiHan">Không thời hạn</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="loaiHopDong" id="duoi12" value="Dưới 12 tháng">
+                                                    <label class="form-check-label" for="duoi12">Dưới 12 tháng</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="loaiHopDong" id="tu12Den36" value="12 đến 36 tháng">
+                                                    <label class="form-check-label" for="tu12Den36">12 đến 36 tháng</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!---->
+                                    <h4>Khả năng đáp ứng<span class="text-danger"> *</span></h4>
+                                    <div class="bg-form-right">
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="lamCa" value="Làm ca" name="lamCa">
+                                                <label class="form-check-label"
+                                                       for="lamCa">Làm ca</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="diCongTac" value="Đi công tác" name="diCongTac">
+                                                <label class="form-check-label"
+                                                       for="diCongTac">Đi công tác</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="diBietPhai" value="Đi biệt phái" name="diBietPhai">
+                                                <label class="form-check-label"
+                                                       for="diBietPhai">Đi biệt phái</label>
+                                            </div>
+                                        </div>
+                                    </div><!---->
+                                    <h4>Tính chất công việc<span class="text-danger"> *</span></h4>
+                                    <div class="bg-form-right">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="tinhChatCongViec" id="toanThoiGian" value="Toàn thời gian">
+                                                    <label class="form-check-label" for="toanThoiGian">Toàn thời gian</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="tinhChatCongViec" id="banThoiGian" value="Bán thời gian">
+                                                    <label class="form-check-label" for="banThoiGian">Bán thời gian</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="tinhChatCongViec" id="lamViecLauDai" value="Làm việc lâu dài">
+                                                    <label class="form-check-label" for="lamViecLauDai">Làm việc lâu dài</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="tinhChatCongViec" id="lamViecTamThoi" value="Làm việc lâu dài">
+                                                    <label class="form-check-label" for="lamViecTamThoi">Làm việc tạm thời</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!---->
+
+
+                                </div>
+                                                                
+                            </div>
+                        </div>
                     </div>
 
                     <div class="text-right mt-3 float-end">
