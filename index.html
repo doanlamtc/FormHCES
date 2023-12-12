@@ -1921,150 +1921,132 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Trọng lượng nâng:</td>
-                                                        <td><p-radiobutton formcontrolname="trongLuong" label="Dưới 5 kg"
-                                                                           name="groupTrongLuong" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupTrongLuong" value="1"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Dưới 5 kg</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="trongLuong" label="5 – 20 kg"
-                                                                           name="groupTrongLuong" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupTrongLuong" value="2"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">5 – 20 kg</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="trongLuong" label="Trên 20 kg"
-                                                                           name="groupTrongLuong" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupTrongLuong" value="3"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Trên 20 kg</label>
-                                                        </p-radiobutton></td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="trongLuongNang" id="duoi5kg" value="Hỗn hợp">
+                                                                <label class="form-check-label" for="duoi5kg">Dưới 5 kg</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="trongLuongNang" id="5Den20" value="Hỗn hợp">
+                                                                <label class="form-check-label" for="5Den20">5 – 20 kg</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="trongLuongNang" id="tren20kg" value="Hỗn hợp">
+                                                                <label class="form-check-label" for="tren20kg">Trên 20 kg</label>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Thính lực:</td>
-                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Kém" name="groupThinhLuc"
-                                                                           class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThinhLuc" value="1"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Kém</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Trung bình"
-                                                                           name="groupThinhLuc" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThinhLuc" value="2"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Trung bình</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Khá" name="groupThinhLuc"
-                                                                           class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThinhLuc" value="3"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Khá</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thinhLuc" label="Tốt" name="groupThinhLuc"
-                                                                           class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThinhLuc" value="4"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Tốt</label>
-                                                        </p-radiobutton></td>
+                                                        <td>Đứng hoặc đi lại:</td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="DungKhongCo" value="Hầu như không có">
+                                                                <label class="form-check-label" for="DungKhongCo">Hầu như không có</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="DungTB" value="Trung bình">
+                                                                <label class="form-check-label" for="DungTB">Trung bình</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="canDung" value="Cần đứng">
+                                                                <label class="form-check-label" for="canDung">Cần đứng</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="diLaiNhieu" value="Đi lại nhiều">
+                                                                <label class="form-check-label" for="diLaiNhieu">Đi lại nhiều</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nghe nói:</td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="ngheNoiKem" value="Kém">
+                                                                <label class="form-check-label" for="ngheNoiKem">Kém</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="ngheNoiTB" value="Trung bình">
+                                                                <label class="form-check-label" for="ngheNoiTB">Trung bình</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="ngheNoiK" value="Khá">
+                                                                <label class="form-check-label" for="ngheNoiK">Khá</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="DungHoacDiLai" id="ngheNoiT" value="Tốt">
+                                                                <label class="form-check-label" for="ngheNoiT">Tốt</label>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Thị lực:</td>
-                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Kém" name="groupThiLuc"
-                                                                           class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThiLuc" value="1"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Kém</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Trung bình"
-                                                                           name="groupThiLuc" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThiLuc" value="2"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Trung bình</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Khá" name="groupThiLuc"
-                                                                           class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThiLuc" value="3"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Khá</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thiLuc" label="Tốt" name="groupThiLuc"
-                                                                           class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThiLuc" value="4"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Tốt</label>
-                                                        </p-radiobutton></td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thiLuc" id="thiLucKem" value="Kém">
+                                                                <label class="form-check-label" for="thiLucKem">Kém</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thiLuc" id="thiLucTB" value="Trung bình">
+                                                                <label class="form-check-label" for="thiLucTB">Trung bình</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thiLuc" id="thiLucK" value="Khá">
+                                                                <label class="form-check-label" for="thiLucK">Khá</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thiLuc" id="thiLucT" value="Tốt">
+                                                                <label class="form-check-label" for="thiLucT">Tốt</label>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Thao tác tay:</td>
-                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Kém"
-                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThaoTacTay" value="1"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Kém</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Trung bình"
-                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThaoTacTay" value="2"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Trung bình</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Khá"
-                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThaoTacTay" value="3"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Khá</label>
-                                                        </p-radiobutton></td>
-                                                        <td><p-radiobutton formcontrolname="thaoTacTay" label="Tốt"
-                                                                           name="groupThaoTacTay" class="ng-untouched ng-pristine ng-valid">
-                                                            <div class="ui-radiobutton ui-widget">
-                                                                <div class="ui-helper-hidden-accessible"><input type="radio"
-                                                                                                                name="groupThaoTacTay" value="4"></div>
-                                                                <div class="ui-radiobutton-box ui-widget ui-state-default"><span
-                                                                        class="ui-radiobutton-icon ui-clickable"></span></div>
-                                                            </div><!----><label class="ui-radiobutton-label">Tốt</label>
-                                                        </p-radiobutton></td>
+                                                        <td>Thao tác bằng tay:</td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thaoTacTay" id="thaoTacTayKem" value="Kém">
+                                                                <label class="form-check-label" for="ngheNoiKem">Kém</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thaoTacTay" id="thaoTacTayTB" value="Trung bình">
+                                                                <label class="form-check-label" for="ngheNoiTB">Trung bình</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thaoTacTay" id="thaoTacTayK" value="Khá">
+                                                                <label class="form-check-label" for="ngheNoiK">Khá</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input me-2" type="radio" name="thaoTacTay" id="thaoTacTayT" value="Tốt">
+                                                                <label class="form-check-label" for="ngheNoiT">Tốt</label>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
