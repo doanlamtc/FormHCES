@@ -412,9 +412,9 @@
                     <div class="tabs">
                         <div class="tab" onclick="changeTab('employmentInfo')">Thông tin lao động</div>
                         <div class="tab" onclick="changeTab('skills')">Năng lực/Kinh nghiệm</div>
-                        <div class="tab" onclick="changeTab('jobIntroduction')">Đăng ký dịch vụ</div>
+                        <div class="tab" onclick="changeTab('registerService')">Đăng ký dịch vụ</div>
                         <div class="tab" onclick="changeTab('desiredJob')">Việc làm mong muốn</div>
-                        <div class="tab" onclick="changeTab('ConsultingProfession')">Nghiệp vụ tư vấn</div>
+                        <div class="tab" onclick="changeTab('Consulting')">Nghiệp vụ tư vấn</div>
                         <div class="tab" onclick="changeTab('JobSession')">Phiên giao dịch việc làm</div>
                     </div>
 
@@ -856,20 +856,21 @@
                                                            name="doituongUuTienKhac">
                                                 </div>
                                             </div>
-                                            <h4>Kỹ năng nghề (nếu có)</h4>
-                                            <div class="form-group mb-3">
-                                                <input class="form-control"
-                                                       formcontrolname="kyNangNghe" maxlength="200" id="kyNangNghe"
-                                                       name="kyNangNghe" placeholder="Nhập kỹ năng nghề ...">
-                                            </div>
-                                            <div class="form-group">
-                                                <input class="form-control"
-                                                       formcontrolname="bacKyNangNghe" maxlength="200"
-                                                       id="bacKyNangNghe" name="bacKyNangNghe"
-                                                       placeholder="Cấp bậc ...">
-                                            </div>
 
 
+                                        </div>
+
+                                        <h4>Kỹ năng nghề (nếu có)</h4>
+                                        <div class="form-group mb-3">
+                                            <input class="form-control"
+                                                   formcontrolname="kyNangNghe" maxlength="200" id="kyNangNghe"
+                                                   name="kyNangNghe" placeholder="Nhập kỹ năng nghề ...">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control"
+                                                   formcontrolname="bacKyNangNghe" maxlength="200"
+                                                   id="bacKyNangNghe" name="bacKyNangNghe"
+                                                   placeholder="Cấp bậc ...">
                                         </div>
                                     </div>
                                 </div>
@@ -1095,7 +1096,7 @@
                         </div>
                     </div>
 
-                    <div id="jobIntroductionTab" class="tab-content bg-white p-4">
+                    <div id="registerServiceTab" class="tab-content bg-white p-4">
                         <div class="col-md-12 pl-70 pr-50">
                             <div class="content-main" >
                                 <div class="row">
@@ -1762,7 +1763,7 @@
                         </div>
                     </div>
 
-                    <div id="ConsultingProfessionTab" class="tab-content bg-white p-4">
+                    <div id="ConsultingTab" class="tab-content bg-white p-4">
                         <div class="col-md-12 pl-70 pr-50">
                             <div class="title-hr">
                                 <p>Nghiệp vụ tư vấn</p>
@@ -1773,10 +1774,174 @@
 
                     <div id="JobSessionTab" class="tab-content bg-white p-4">
                         <div class="col-md-12 pl-70 pr-50">
-                            <div class="title-hr">
-                                <p>Phiên giao dịch viêc làm</p>
-                                <hr><!---->
-                            </div><!---->
+                            <div class="content-main">
+                                <div class="row">
+                                    <div class="col-md-9 border-right">
+                                        <div class="title-hr">
+                                            <p>Giới thiệu việc làm</p>
+                                            <hr>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-8">
+                                                <label class="control-label">Tên doanh nghiệp<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="tenDoanhNghiep" maxlength="200" name="tenDoanhNghiep"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Mã số thuế<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="maSoThue" name="maSoThue" maxlength="14" minlength="10"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Địa chỉ<span class="text-danger"> *</span></label>
+                                                <input class="form-control" id="diaChiCongTy" name="diaChiCongTy" maxlength="200"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-8">
+                                                <label class="control-label">Vị trí việc làm<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="viTriViecLam" maxlength="200" name="viTriViecLam"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Mã nghề<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="maNgheTuVan" name="maNgheTuVan" maxlength="10"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Mức lương<span class="text-danger"> *</span></label>
+                                                <input class="form-control" id="mucLuongTuVan" name="mucLuongTuVan" maxlength="200"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">Ngày bắt đầu làm việc<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="ngayBatDauLam" name="ngayBatDauLam"
+                                                       placeholder="Nhập ..." type="date"><!---->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Thời hạn hợp đồng<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="thoiHanHopDong" name="maNgheTuVan"
+                                                       placeholder="Nhập ..." type="text"><!---->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Ngày kết thúc làm việc<span
+                                                        class="text-danger"> *</span></label>
+                                                <input class="form-control" id="ngayKetThucLam" name="ngayKetThucLam"
+                                                       placeholder="Nhập ..." type="date"><!---->
+                                            </div>
+                                        </div>
+
+
+                                        <div class="title-hr">
+                                            <p>Kết quả<span class="text-danger"> *</span></p>
+                                            <hr>
+                                        </div>
+                                        <div class="bg-form ">
+                                            <div class="row form-group mb-0">
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-check-input" id="trungTuyen"
+                                                               value="Trúng tuyển" name="ketQua">
+                                                        <label class="form-check-label" for="trungTuyen">Trúng tuyển</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-check-input" id="khongTrungTuyen"
+                                                               value="Không trúng tuyển" name="ketQua">
+                                                        <label class="form-check-label" for="khongTrungTuyen">Không trúng tuyển</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input type="radio" class="form-check-input" id="choKetQua"
+                                                               value="Chờ kết quả" name="ketQua">
+                                                        <label class="form-check-label" for="choKetQua">Phỏng vấn lần 2 (chờ kết quả)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Ghi chú</label>
+                                                <textarea
+                                                        class="form-control"
+                                                        maxlength="1000" rows="2" id="ghiChu" name="ghiChu">
+                                                </textarea><!---->
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <h4>Cung cấp thông tin TTLĐ</h4>
+                                        <div class="bg-form-right">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="cungCapTT" id="cungCap" value="Cung cấp">
+                                                        <label class="form-check-label" for="cungCap">Cung cấp</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="cungCapTT" id="khongCungCap" value="Không cung cấp">
+                                                        <label class="form-check-label" for="khongCungCap">Không cung cấp</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Hình thức kết nối</h4>
+                                        <div class="bg-form-right">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="hinhThucKetNoi" id="trucTiep" value="Trực tiếp">
+                                                        <label class="form-check-label" for="trucTiep">Trực tiếp</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input me-2" type="radio" name="hinhThucKetNoi" id="online" value="Online">
+                                                        <label class="form-check-label" for="online">Online</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Ngày kết nối</h4>
+                                        <div class="form-group mb-3">
+                                            <input class="form-control" id="ngayKetNoi" name="ngayKetNoi" type="date">
+                                        </div>
+                                        <h4>Cán bộ thực hiện</h4>
+                                        <div class="form-group">
+                                            <input class="form-control" maxlength="200"
+                                                   id="canBoThucHien" name="canBoThucHien"
+                                                   placeholder="Nhập họ tên ...">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
 
