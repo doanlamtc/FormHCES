@@ -412,9 +412,11 @@
                     <div class="tabs">
                         <div class="tab" onclick="changeTab('employmentInfo')">Thông tin lao động</div>
                         <div class="tab" onclick="changeTab('skills')">Năng lực/Kinh nghiệm</div>
-                        <div class="tab" onclick="changeTab('registerService')">Đăng ký dịch vụ</div>
                         <div class="tab" onclick="changeTab('desiredJob')">Việc làm mong muốn</div>
+                        <div class="tab" onclick="changeTab('registerService')">Đăng ký dịch vụ/Nghiệp vụ tư vấn</div>
+<!--
                         <div class="tab" onclick="changeTab('Consulting')">Nghiệp vụ tư vấn</div>
+-->
                         <div class="tab" onclick="changeTab('JobSession')">Phiên giao dịch việc làm</div>
                     </div>
 
@@ -1096,204 +1098,6 @@
                         </div>
                     </div>
 
-                    <div id="registerServiceTab" class="tab-content bg-white p-4">
-                        <div class="col-md-12 pl-70 pr-50">
-                            <div class="content-main" >
-                                <div class="row">
-                                    <div class="col-md-9 border-right">
-                                        <h4>Đăng ký tư vấn <span class="text-danger"> *</span></h4>
-                                        <div class="row form-group mb-0">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="phapLuatLaoDongCheckbox" value="PLLĐ"
-                                                           name="phapLuatLaoDong">
-                                                    <label class="form-check-label"
-                                                           for="phapLuatLaoDongCheckbox">Tư vấn chính sách, PLLĐ</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="tuVanViecLam" value="TVVL"
-                                                           name="tuVanViecLam">
-                                                    <label class="form-check-label"
-                                                           for="tuVanViecLam">Việc làm</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="hocNghe" value="Học nghề"
-                                                           name="hocNghe">
-                                                    <label class="form-check-label"
-                                                           for="hocNghe">Tư vấn về đào tạo, kỹ năng nghề</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="timViecLam" value="Đăng ký tìm việc làm"
-                                                           name="timViecLam">
-                                                    <label class="form-check-label"
-                                                           for="timViecLam">Đăng ký tìm việc làm (bổ sung thông tin tại mẫu số 01a/PL1)</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="dangKyDVKhac" value="Khác"
-                                                           name="viecLam">
-                                                    <label class="form-check-label"
-                                                           for="dangKyDVKhac">Khác</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <input type="text" class="form-control" id="tenDichVuKhac" maxlength="200" name="tenDichVuKhac" placeholder="Nhập tên dịch vụ khác ..."><!---->
-                                            </div>
-                                        </div><!----><!---->
-                                        <h4>Mức độ sẵn sàng làm việc mới <span class="text-danger"> *</span></h4>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="sanSangLamViec" id="rdSanSang1" value="Làm việc ngay">
-                                                    <label class="form-check-label" for="rdSanSang1">Khi được giới thiệu việc làm phù hợp</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="sanSangLamViec" id="rdSanSang2" value="Làm việc sau">
-                                                    <label class="form-check-label" for="rdSanSang2">Làm việc sau (...) tháng</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <input type="text" class="form-control" id="sauXThang" maxlength="200" name="sauXThang" placeholder="Nhập số tháng ..."><!---->
-                                            </div>
-                                        </div><!----><!---->
-                                        <h4>Hình thức tuyển dụng <span class="text-danger"> *</span></h4>
-                                        <div class="row form-group mb-0">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="tuyenDungTrucTiep" value="Trực tiếp"
-                                                           name="tuyenDungTrucTiep">
-                                                    <label class="form-check-label"
-                                                           for="tuyenDungTrucTiep">Trực tiếp</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="tuyenDungQuaDT" value="Qua điện thoại"
-                                                           name="tuyenDungQuaDT">
-                                                    <label class="form-check-label"
-                                                           for="tuyenDungQuaDT">Qua điện thoại</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="tuyenDungQuaOnline" value="Phỏng vấn online"
-                                                           name="tuyenDungQuaOnline">
-                                                    <label class="form-check-label"
-                                                           for="tuyenDungQuaOnline">Phỏng vấn online</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="tuyenDungQuaCV" value="Nộp CV"
-                                                           name="tuyenDungQuaCV">
-                                                    <label class="form-check-label"
-                                                           for="tuyenDungQuaCV">Nộp CV</label>
-                                                </div>
-                                            </div>
-                                        </div><!----><!---->
-
-                                        <h4>Đối tượng lao động <span class="text-danger"> *</span></h4>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongTuDo" value="Tự do">
-                                                    <label class="form-check-label" for="rdSanSang1">Tự do</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongBHTN" value="BHTN">
-                                                    <label class="form-check-label" for="doiTuongBHTN">BHTN</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongKhuyetTat" value="Khuyết tật">
-                                                    <label class="form-check-label" for="doiTuongKhuyetTat">Khuyết tật</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongSauCai" value="Sau cai">
-                                                    <label class="form-check-label" for="doiTuongSauCai">Sau cai</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongManHanTu" value="Mãn hạn tù">
-                                                    <label class="form-check-label" for="doiTuongManHanTu">Mãn hạn tù</label>
-                                                </div>
-                                            </div>
-                                        </div><!----><!---->
-
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <h4>Ngày đăng ký<span class="text-danger">*</span></h4>
-
-                                        <div class="form-group mb-3">
-                                            <input class="form-control" id="ngayDangKy" name="ngayDangKy" type="date">
-                                        </div>
-                                        <h4> Thực hiện tư vấn <span class="text-danger"> *</span></h4>
-                                        <div class="bg-form-right">
-
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="nVTVviecLam" value="Việc làm"
-                                                           name="nVTVviecLam">
-                                                    <label class="form-check-label"
-                                                           for="nVTVviecLam">Việc làm</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="nVTVHocNghe" value="Học nghề"
-                                                           name="nVTVHocNghe">
-                                                    <label class="form-check-label"
-                                                           for="nVTVHocNghe">Học nghề</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input"
-                                                           id="nVTVPLLD" value="Pháp luật lao động"
-                                                           name="nVTVPLLD">
-                                                    <label class="form-check-label"
-                                                           for="nVTVPLLD">Pháp luật lao động</label>
-                                                </div>
-                                            </div>
-
-                                        </div><!----><!---->
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div id="desiredJobTab" class="tab-content bg-white p-4">
                         <div class="col-md-12 pl-70 pr-50">
                             <div class="content-main">
@@ -1825,15 +1629,204 @@
                         </div>
                     </div>
 
-                    <div id="ConsultingTab" class="tab-content bg-white p-4">
+                    <div id="registerServiceTab" class="tab-content bg-white p-4">
                         <div class="col-md-12 pl-70 pr-50">
-                            <div class="title-hr">
-                                <p>Nghiệp vụ tư vấn</p>
-                                <hr><!---->
-                            </div><!---->
+                            <div class="content-main" >
+                                <div class="row">
+                                    <div class="col-md-9 border-right">
+                                        <h4>Đăng ký tư vấn <span class="text-danger"> *</span></h4>
+                                        <div class="row form-group mb-0">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="phapLuatLaoDongCheckbox" value="PLLĐ"
+                                                           name="phapLuatLaoDong">
+                                                    <label class="form-check-label"
+                                                           for="phapLuatLaoDongCheckbox">Tư vấn chính sách, PLLĐ</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="tuVanViecLam" value="TVVL"
+                                                           name="tuVanViecLam">
+                                                    <label class="form-check-label"
+                                                           for="tuVanViecLam">Việc làm</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="hocNghe" value="Học nghề"
+                                                           name="hocNghe">
+                                                    <label class="form-check-label"
+                                                           for="hocNghe">Tư vấn về đào tạo, kỹ năng nghề</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="timViecLam" value="Đăng ký tìm việc làm"
+                                                           name="timViecLam">
+                                                    <label class="form-check-label"
+                                                           for="timViecLam">Đăng ký tìm việc làm (bổ sung thông tin tại mẫu số 01a/PL1)</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="dangKyDVKhac" value="Khác"
+                                                           name="viecLam">
+                                                    <label class="form-check-label"
+                                                           for="dangKyDVKhac">Khác</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <input type="text" class="form-control" id="tenDichVuKhac" maxlength="200" name="tenDichVuKhac" placeholder="Nhập tên dịch vụ khác ..."><!---->
+                                            </div>
+                                        </div><!----><!---->
+                                        <h4>Mức độ sẵn sàng làm việc mới <span class="text-danger"> *</span></h4>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="sanSangLamViec" id="rdSanSang1" value="Làm việc ngay">
+                                                    <label class="form-check-label" for="rdSanSang1">Khi được giới thiệu việc làm phù hợp</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="sanSangLamViec" id="rdSanSang2" value="Làm việc sau">
+                                                    <label class="form-check-label" for="rdSanSang2">Làm việc sau (...) tháng</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" id="sauXThang" maxlength="200" name="sauXThang" placeholder="Nhập số tháng ..."><!---->
+                                            </div>
+                                        </div><!----><!---->
+                                        <h4>Hình thức tuyển dụng <span class="text-danger"> *</span></h4>
+                                        <div class="row form-group mb-0">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="tuyenDungTrucTiep" value="Trực tiếp"
+                                                           name="tuyenDungTrucTiep">
+                                                    <label class="form-check-label"
+                                                           for="tuyenDungTrucTiep">Trực tiếp</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="tuyenDungQuaDT" value="Qua điện thoại"
+                                                           name="tuyenDungQuaDT">
+                                                    <label class="form-check-label"
+                                                           for="tuyenDungQuaDT">Qua điện thoại</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="tuyenDungQuaOnline" value="Phỏng vấn online"
+                                                           name="tuyenDungQuaOnline">
+                                                    <label class="form-check-label"
+                                                           for="tuyenDungQuaOnline">Phỏng vấn online</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="tuyenDungQuaCV" value="Nộp CV"
+                                                           name="tuyenDungQuaCV">
+                                                    <label class="form-check-label"
+                                                           for="tuyenDungQuaCV">Nộp CV</label>
+                                                </div>
+                                            </div>
+                                        </div><!----><!---->
+
+                                        <h4>Đối tượng lao động <span class="text-danger"> *</span></h4>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongTuDo" value="Tự do">
+                                                    <label class="form-check-label" for="rdSanSang1">Tự do</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongBHTN" value="BHTN">
+                                                    <label class="form-check-label" for="doiTuongBHTN">BHTN</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongKhuyetTat" value="Khuyết tật">
+                                                    <label class="form-check-label" for="doiTuongKhuyetTat">Khuyết tật</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongSauCai" value="Sau cai">
+                                                    <label class="form-check-label" for="doiTuongSauCai">Sau cai</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-2" type="radio" name="doiTuongLaoDong" id="doiTuongManHanTu" value="Mãn hạn tù">
+                                                    <label class="form-check-label" for="doiTuongManHanTu">Mãn hạn tù</label>
+                                                </div>
+                                            </div>
+                                        </div><!----><!---->
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <h4>Ngày đăng ký<span class="text-danger">*</span></h4>
+
+                                        <div class="form-group mb-3">
+                                            <input class="form-control" id="ngayDangKy" name="ngayDangKy" type="date">
+                                        </div>
+                                        <h4> Thực hiện tư vấn <span class="text-danger"> *</span></h4>
+                                        <div class="bg-form-right">
+
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="nVTVviecLam" value="Việc làm"
+                                                           name="nVTVviecLam">
+                                                    <label class="form-check-label"
+                                                           for="nVTVviecLam">Việc làm</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="nVTVHocNghe" value="Học nghề"
+                                                           name="nVTVHocNghe">
+                                                    <label class="form-check-label"
+                                                           for="nVTVHocNghe">Học nghề</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                           id="nVTVPLLD" value="Pháp luật lao động"
+                                                           name="nVTVPLLD">
+                                                    <label class="form-check-label"
+                                                           for="nVTVPLLD">Pháp luật lao động</label>
+                                                </div>
+                                            </div>
+
+                                        </div><!----><!---->
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div id="JobSessionTab" class="tab-content bg-white p-4">
                         <div class="col-md-12 pl-70 pr-50">
                             <div class="content-main">
